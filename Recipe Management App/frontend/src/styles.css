@@ -1,0 +1,9 @@
+
+/* Kitchen mode emphasizes readability */
+.kitchen-step {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+.kitchen-ingredients {
+  font-size: 1.25rem;
+}

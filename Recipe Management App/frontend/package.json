@@ -1,0 +1,16 @@
+
+{
+  "name": "recipes-frontend-skeleton",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "echo placeholder",
+    "build": "echo placeholder"
+  },
+  "dependencies": {
+    "@angular/core": "placeholder",
+    "@angular/common": "placeholder",
+    "@angular/router": "placeholder",
+    "rxjs": "placeholder"
+  }
+}

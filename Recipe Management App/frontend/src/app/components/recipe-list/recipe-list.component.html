@@ -1,0 +1,12 @@
+
+<div>
+  <h1>Recipes</h1>
+  <input [(ngModel)]="query" placeholder="Search recipes..." />
+  <button (click)="search()">Search</button>
+
+  <ul>
+    <li *ngFor="let r of recipes">
+      <a [routerLink]="['/recipes', r.id]">{{ r.title }}</a>
+    </li>
+  </ul>
+</div>

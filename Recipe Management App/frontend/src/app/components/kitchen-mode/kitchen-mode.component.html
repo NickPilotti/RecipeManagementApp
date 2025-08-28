@@ -1,0 +1,22 @@
+
+<div *ngIf="recipe">
+  <h1>{{ recipe.title }} — Kitchen Mode</h1>
+
+  <section class="kitchen-ingredients">
+    <h3>Ingredients</h3>
+    <ul>
+      <li *ngFor="let ing of recipe.ingredients">
+        {{ ing.quantity }} {{ ing.unit }} — {{ ing.name || ing.ingredientId }}
+      </li>
+    </ul>
+  </section>
+
+  <section class="kitchen-step">
+    <h3>Step {{ stepIndex + 1 }} of {{ steps.length }}</h3>
+    <p>{{ steps[stepIndex] }}</p>
+    <div>
+      <button (click)="prev()" [disabled]="stepIndex === 0">Prev</button>
+      <button (click)="next()" [disabled]="stepIndex === steps.length - 1">Next</button>
+    </div>
+  </section>
+</div>

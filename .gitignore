@@ -1,0 +1,23 @@
+
+# Backend (Java/Maven/Gradle)
+target/
+build/
+*.class
+*.log
+*.iml
+*.ipr
+*.iws
+.idea/
+.settings/
+.project
+.classpath
+
+# Frontend (Node/Angular)
+node_modules/
+dist/
+.tmp/
+.cache/
+
+# OS files
+.DS_Store
+Thumbs.db

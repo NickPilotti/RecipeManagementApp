@@ -1,0 +1,30 @@
+
+<div>
+  <h1>{{ model.id ? 'Edit' : 'Create' }} Recipe</h1> /* grabbed from router path */
+
+  <label>Title
+    <input [(ngModel)]="model.title" />
+  </label>
+
+  <label>Yield Amount
+    <input type="number" [(ngModel)]="model.yieldAmount" />
+  </label>
+  <label>Yield Unit
+    <input [(ngModel)]="model.yieldUnit" />
+  </label>
+
+  <h3>Ingredients</h3>
+  <button (click)="addIngredient()">Add Ingredient</button>
+  <div *ngFor="let ing of model.ingredients; let i = index">
+    <input placeholder="Name" [(ngModel)]="ing.name" />
+    <input type="number" placeholder="Qty" [(ngModel)]="ing.quantity" />
+    <input placeholder="Unit" [(ngModel)]="ing.unit" />
+  </div>
+
+  <h3>Instructions</h3>
+  <textarea rows="6" [(ngModel)]="model.instructions" placeholder="One step per line"></textarea>
+
+  <div>
+    <button (click)="save()">Save</button>
+  </div>
+</div>
